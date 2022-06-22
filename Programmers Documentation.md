@@ -190,13 +190,16 @@ Last transformation I used was scale which is again easy. Scaling is interpreted
 ```python
 glScaled(x, y, z)
 ```
-$$S = 
-\left(\begin{array}{cc} 
+$$\begin{equation*}
+S = 
+\begin{pmatrix}
 sx & 0 & 0 & 0\\
 0 & sy & 0 & 0\\
 0 & 0 & sz & 0\\
-0 & 0 & 0 & 1\\
-\end{array}\right)$$
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{equation*}$$
+
 The last important function which is not clear is perspective<br>
 
     gluPerspective(fovy, aspect, zNear, zFar)
@@ -206,12 +209,14 @@ The last important function which is not clear is perspective<br>
 - <b>zNear</b> - Distance between the camera and the nearest clipping plane. That means everything in between the distane won't be rendered
 - <b>zFar</b> - Same as zNear but this is with the farest clipping plane. Also everything behind it won't be rendered. Having this as really high value can cause flickering and can break the model<br>
 The matrix isn't that important to know as to understand the args. But I'll show the matrix anyways
+
 $$\left(\begin{array}{cc} 
 \frac{f}{aspect} & 0 & 0 & 0\\
 0 & f & 0 & 0\\
 0 & 0 & \frac{zFar+zNear}{zNear-zFar} & \frac{2 * zFar*zNear}{zNear-zFar}\\
 0 & 0 & -1 & 0\\
 \end{array}\right)$$
+
 Where
 $$f = cotangent(\frac{fovy}{2})$$
 ## Object information and export
