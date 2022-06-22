@@ -155,31 +155,35 @@ For rotation in 3D space it's little bit more complicated than tranlation. For r
 ```python
 glRotatef(A, x, y, z)
 ```
-$$Rx = 
-\left(\begin{array}{cc} 
+$$\begin{equation*}
+Rx = 
+\begin{pmatrix}
 1 & 0 & 0 & 0\\
 0 & cos(A) & -sin(A) & 0\\
 0 & sin(A) & cos(A) & 0\\
-0 & 0 & 0 & 1\\
-\end{array}\right)
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{equation*}$$
 
+$$\begin{equation*}
 Ry = 
-\left(\begin{array}{cc} 
+\begin{pmatrix}
 cos(A) & 0 & sin(A) & 0\\
 0 & 1 & 0 & 0\\
 -sin(A) & 0 & cos(A) & 0\\
-0 & 0 & 0 & 1\\
-\end{array}\right)
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{equation*}$$
 
-$$
-$$
+$$\begin{equation*}
 Rz = 
-\left(\begin{array}{cc} 
+\begin{pmatrix}
 cos(A) & -sin(A) & 0 & 0\\
 sin(A) & cos(A) & 0 & 0\\
 0 & 0 & 1 & 0\\
-0 & 0 & 0 & 1\\
-\end{array}\right)$$
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{equation*}$$
 A is a rotations angle and the x, y and z parameters are just boolean where we put 1 and zeroes depending on which axis we want to rotate.<br>
 Last transformation I used was scale which is again easy. Scaling is interpreted as multiplying any dimension of the target object by a scalar. This scalar can be <1 if we want to shrink the object, and it can be >1 if we want to enlarge the object. The matrix looks like this
 ```python
