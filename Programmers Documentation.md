@@ -134,21 +134,6 @@ A =
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
 \end{pmatrix}
-*
-T = 
-\begin{bmatrix}
-1 & 0 & 0 & -5\\
-0 & 1 & 0 & 0\\
-0 & 0 & 1 & 0\\
-0 & 0 & 0 & 1
-\end{bmatrix}
-=
-\begin{ematrix}
-1 & 0 & 0 & -5\\
-0 & 1 & 0 & 0\\
-0 & 0 & 1 & 1\\
-0 & 0 & 0 & 1
-\end{ematrix}
 \end{equation*}$$
 
 And thats our new object matrix.<br>
