@@ -87,41 +87,34 @@ For example here I check if there is any input from a mouse and if its a left bu
 ### How OpenGL Translation/Rotation/Scale works
 Simply said OpenGL computes with matrixes, so every movement, rotation etc. is just a multiplication the current matrix with another matrix. For exaplme let's look how exactly GlTranslatef works and how it calculate. <br>
 We will take a simple Matrix(A), which we can say is a matrix of our model.
-$$
-A = 
+$$A = 
 \left(\begin{array}{cc} 
 1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 1\\
 0 & 0 & 0 & 1\\
-\end{array}\right)
-$$
+\end{array}\right)$$
 Translation of this model, or matrix is just multiplication with Translate matrix which looks like this
 ```python
 glTranslatef(tx, ty, tz)
 ```
-$$
-T = 
+$$T = 
 \left(\begin{array}{cc} 
 1 & 0 & 0 & tx\\
 0 & 1 & 0 & ty\\
 0 & 0 & 1 & tz\\
 0 & 0 & 0 & 1\\
-\end{array}\right)
-$$
+\end{array}\right)$$
 Where tx,ty and tz are numbers that shows how much the model should be moved on specific axis. Let's say we want to move that object by 5 to the left. We could say that from axis graph that left side is negative X.
- $$
-T = 
+ $$T = 
 \left(\begin{array}{cc} 
 1 & 0 & 0 & -5\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1\\
-\end{array}\right)
-$$
+\end{array}\right)$$
 And now we just have to multiply our matrix with this, as we know matrix multiplication isn't commutative so the first matrix is our model and second is the translate matrix.
-$$
-A = 
+$$A = 
 \left(\begin{array}{cc} 
 1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
@@ -142,15 +135,13 @@ T =
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 1\\
 0 & 0 & 0 & 1\\
-\end{array}\right)
-$$
+\end{array}\right)$$
 And thats our new object matrix.<br>
 For rotation in 3D space it's little bit more complicated than tranlation. For rotation we have 3 different matrixes for all axis.
 ```python
 glRotatef(A, x, y, z)
 ```
- $$
-Rx = 
+ $$Rx = 
 \left(\begin{array}{cc} 
 1 & 0 & 0 & 0\\
 0 & cos(A) & -sin(A) & 0\\
@@ -174,22 +165,19 @@ cos(A) & -sin(A) & 0 & 0\\
 sin(A) & cos(A) & 0 & 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1\\
-\end{array}\right)
-$$
+\end{array}\right)$$
 A is a rotations angle and the x, y and z parameters are just boolean where we put 1 and zeroes depending on which axis we want to rotate.<br>
 Last transformation I used was scale which is again easy. Scaling is interpreted as multiplying any dimension of the target object by a scalar. This scalar can be <1 if we want to shrink the object, and it can be >1 if we want to enlarge the object. The matrix looks like this
 ```python
 glScaled(x, y, z)
 ```
-$$
-S = 
+$$S = 
 \left(\begin{array}{cc} 
 sx & 0 & 0 & 0\\
 0 & sy & 0 & 0\\
 0 & 0 & sz & 0\\
 0 & 0 & 0 & 1\\
-\end{array}\right)
-$$
+\end{array}\right)$$
 The last important function which is not clear is perspective<br>
 
     gluPerspective(fovy, aspect, zNear, zFar)
@@ -199,18 +187,14 @@ The last important function which is not clear is perspective<br>
 - <b>zNear</b> - Distance between the camera and the nearest clipping plane. That means everything in between the distane won't be rendered
 - <b>zFar</b> - Same as zNear but this is with the farest clipping plane. Also everything behind it won't be rendered. Having this as really high value can cause flickering and can break the model<br>
 The matrix isn't that important to know as to understand the args. But I'll show the matrix anyways
-$$
-\left(\begin{array}{cc} 
+$$\left(\begin{array}{cc} 
 \frac{f}{aspect} & 0 & 0 & 0\\
 0 & f & 0 & 0\\
 0 & 0 & \frac{zFar+zNear}{zNear-zFar} & \frac{2 * zFar*zNear}{zNear-zFar}\\
 0 & 0 & -1 & 0\\
-\end{array}\right)
-$$
+\end{array}\right)$$
 Where
-$$
-f = cotangent(\frac{fovy}{2})
-$$
+$$f = cotangent(\frac{fovy}{2})$$
 ## Object information and export
 ---
 There are two main buttons that can provides you with information about the object. First is the "Show Info" button. The function itself is easy, just printing string. I save the information all along the program, when u select a object, the size of the file will be saved and when you load the object, in the main loop where all the vertices are loaded I save all vertices and faces. All the variables I pass to function <b>Statistics()</b> where I put everything together.<br>
