@@ -91,9 +91,10 @@ We will take a simple Matrix(A), which we can say is a matrix of our model.
 $$\begin{equation*}
 A = 
 \begin{pmatrix}
-1 & 2 & 3 \\
-4 & 5 & 6 \\
-7 & 8 & 9
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+0 & 0 & 0 & 1
 \end{pmatrix}
 \end{equation*}$$
 
