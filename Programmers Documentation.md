@@ -88,8 +88,8 @@ For example here I check if there is any input from a mouse and if its a left bu
 Simply said OpenGL computes with matrixes, so every movement, rotation etc. is just a multiplication the current matrix with another matrix. For exaplme let's look how exactly GlTranslatef works and how it calculate. <br>
 We will take a simple Matrix(A), which we can say is a matrix of our model.
 $$\begin{pmatrix}
-a & b\\\ 
-c & d
+a & b\\
+c & d\\
 b & a
 \end{pmatrix}$$
 
