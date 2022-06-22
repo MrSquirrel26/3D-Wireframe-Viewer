@@ -113,6 +113,7 @@ T =
 \end{equation*}$$
 
 Where tx,ty and tz are numbers that shows how much the model should be moved on specific axis. Let's say we want to move that object by 5 to the left. We could say that from axis graph that left side is negative X.
+
 $$\begin{equation*}
 T = 
 \begin{pmatrix}
@@ -122,7 +123,9 @@ T =
 0 & 0 & 0 & 1
 \end{pmatrix}
 \end{equation*}$$
+
 And now we just have to multiply our matrix with this, as we know matrix multiplication isn't commutative so the first matrix is our model and second is the translate matrix.
+
 $$\begin{equation*}
 A = 
 \begin{pmatrix}
