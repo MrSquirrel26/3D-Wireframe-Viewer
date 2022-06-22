@@ -129,9 +129,9 @@ And now we just have to multiply our matrix with this, as we know matrix multipl
 $$\begin{equation*}
 A = 
 \begin{pmatrix}
-1 & 0 & 0 & -5\\
+1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
-0 & 0 & 1 & 0\\
+0 & 0 & 1 & 1\\
 0 & 0 & 0 & 1
 \end{pmatrix}
 *
@@ -142,7 +142,7 @@ T =
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
 \end{pmatrix}
-*
+=
 \begin{pmatrix}
 1 & 0 & 0 & -5\\
 0 & 1 & 0 & 0\\
