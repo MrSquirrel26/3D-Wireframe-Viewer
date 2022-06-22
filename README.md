@@ -42,7 +42,7 @@ On some objects with right texture informations in the .mtl file, you are able t
 ---
 When the viewport loads it should looks something like this:
 
-![Wireframe Viewport](Images/ViewPort.png)
+![Wireframe Viewport](ViewPort.png)
 
 
 Viewport is controled via keyboard and mouse
