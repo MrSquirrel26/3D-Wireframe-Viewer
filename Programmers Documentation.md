@@ -184,6 +184,7 @@ sin(A) & cos(A) & 0 & 0\\
 0 & 0 & 0 & 1
 \end{pmatrix}
 \end{equation*}$$
+
 A is a rotations angle and the x, y and z parameters are just boolean where we put 1 and zeroes depending on which axis we want to rotate.<br>
 Last transformation I used was scale which is again easy. Scaling is interpreted as multiplying any dimension of the target object by a scalar. This scalar can be <1 if we want to shrink the object, and it can be >1 if we want to enlarge the object. The matrix looks like this
 ```python
