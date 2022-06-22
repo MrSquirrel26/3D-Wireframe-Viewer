@@ -89,7 +89,7 @@ Simply said OpenGL computes with matrixes, so every movement, rotation etc. is j
 We will take a simple Matrix(A), which we can say is a matrix of our model.
 $$\begin{pmatrix}
 a & b\\\ 
-c & d\\\
+c & d
 b & a
 \end{pmatrix}$$
 
