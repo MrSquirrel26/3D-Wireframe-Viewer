@@ -87,14 +87,7 @@ For example here I check if there is any input from a mouse and if its a left bu
 ### How OpenGL Translation/Rotation/Scale works
 Simply said OpenGL computes with matrixes, so every movement, rotation etc. is just a multiplication the current matrix with another matrix. For exaplme let's look how exactly GlTranslatef works and how it calculate. <br>
 We will take a simple Matrix(A), which we can say is a matrix of our model.
-$$
-A = 
-\left(\begin{array}{cc} 
-1 & 0 & 0 & 0\\
-0 & 1 & 0 & 0\\
-0 & 0 & 1 & 1\\
-0 & 0 & 0 & 1\\
-\end{array}\right)$$
+$$A = \left(\begin{array}{cc} 1 & 0 & 0 & 0\\0 & 1 & 0 & 0\\0 & 0 & 1 & 1\\0 & 0 & 0 & 1\\\end{array}\right)$$
 Translation of this model, or matrix is just multiplication with Translate matrix which looks like this
 ```python
 glTranslatef(tx, ty, tz)
