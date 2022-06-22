@@ -93,10 +93,8 @@ $$
 -0.4472136 & -0.8944272
 \end{array}\right)
 \left(\begin{array}{cc} 
-1 & 0 & 0 & 0\\ 
-0 & 1 & 0 & 0\\ 
-0 & 0 & 1 & 1\\ 
-0 & 0 & 0 & 1
+10 & 0\\ 
+0 & 5
 \end{array}\right)
 $$ 
 Translation of this model, or matrix is just multiplication with Translate matrix which looks like this
