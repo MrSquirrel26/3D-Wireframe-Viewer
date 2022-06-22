@@ -126,7 +126,7 @@ T =
 
 And now we just have to multiply our matrix with this, as we know matrix multiplication isn't commutative so the first matrix is our model and second is the translate matrix.
 
-$$\begin{}
+$$\begin{equation*}
 A = 
 \begin{pmatrix}
 1 & 0 & 0 & 0\\
@@ -142,14 +142,14 @@ T =
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
 \end{pmatrix}
-+
+"="
 \begin{pmatrix}
 1 & 0 & 0 & -5\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 1\\
 0 & 0 & 0 & 1
 \end{pmatrix}
-\end{}$$
+\end{equation*}$$
 
 And thats our new object matrix.<br>
 For rotation in 3D space it's little bit more complicated than tranlation. For rotation we have 3 different matrixes for all axis.
