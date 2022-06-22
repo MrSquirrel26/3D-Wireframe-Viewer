@@ -203,7 +203,9 @@ sx & 0 & 0 & 0\\
 The last important function which is not clear is perspective<br>
 
     gluPerspective(fovy, aspect, zNear, zFar)
-![Wireframe Viewport](dist/Images/perspective.jpg)
+    
+![Wireframe Viewport](Images/perspective.jpg)
+
 - <b>Fovy</b> - Basically the angle in between a plane passing through the camera position as well as the top of your screen and another plane passing through the camera position and the bottom of your screen. The bigger this angle is, the more you can see of the world - but at the same time, the objects you can see will become smaller.
 - <b>Aspect</b> - The aspect ratio, which controls the horizontal viewing angle. For a non-stretched perspective, aspect should be the ratio of the screen width to height. For example, on a 640×480 display, aspect should be 4/3.
 - <b>zNear</b> - Distance between the camera and the nearest clipping plane. That means everything in between the distane won't be rendered
