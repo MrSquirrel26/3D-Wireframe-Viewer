@@ -135,6 +135,13 @@ A =
 0 & 0 & 0 & 1
 \end{pmatrix}
 *
+T = 
+\begin{pmatrix}
+1 & 0 & 0 & -5\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
 \end{equation*}$$
 
 And thats our new object matrix.<br>
