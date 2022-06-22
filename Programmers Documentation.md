@@ -136,19 +136,19 @@ A =
 \end{pmatrix}
 *
 T = 
-\begin{pmatrix}
+\begin{bmatrix}
 1 & 0 & 0 & -5\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
-\end{pmatrix}
+\end{bmatrix}
 =
-\begin{pmatrix}
+\begin{ematrix}
 1 & 0 & 0 & -5\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 1\\
 0 & 0 & 0 & 1
-\end{pmatrix}
+\end{ematrix}
 \end{equation*}$$
 
 And thats our new object matrix.<br>
@@ -156,7 +156,7 @@ For rotation in 3D space it's little bit more complicated than tranlation. For r
 ```python
 glRotatef(A, x, y, z)
 ```
- $$Rx = 
+$$Rx = 
 \left(\begin{array}{cc} 
 1 & 0 & 0 & 0\\
 0 & cos(A) & -sin(A) & 0\\
