@@ -258,3 +258,4 @@ The last question is why I  used pygame as the main view window. The easy explan
 ## End Words
 ---
 The whole process of putting it all together was really fun and I learnt a lot of new stuff, mostly about OpenGL and I'm ready to use OpenGL in the following projects as well.
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
