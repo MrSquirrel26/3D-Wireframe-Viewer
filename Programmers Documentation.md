@@ -127,14 +127,16 @@ T =
 And now we just have to multiply our matrix with this, as we know matrix multiplication isn't commutative so the first matrix is our model and second is the translate matrix.
 
 $$\begin{equation*}
-A = \begin{pmatrix}
+A = 
+\begin{pmatrix}
 1 & 0 & 0 & -5\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0\\
 0 & 0 & 0 & 1
 \end{pmatrix}
 *
-T = \begin{pmatrix}
+T = 
+\begin{pmatrix}
 1 & 0 & 0 & -5\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0\\
