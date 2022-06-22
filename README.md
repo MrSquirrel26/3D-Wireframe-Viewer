@@ -26,7 +26,7 @@ If you are 3D artist or just using 3D objects, with this program you can see you
     This is not a proper function of the program, it is just something I wanted to try. It doesn't work properly, there are some major bugs with loading the object, rotation speed and origin calculations but I left it there anyways.
 On some objects with right texture informations in the .mtl file, you are able to see your model in Full View with lighting and textures. The main problem with this is that, if you want to do that, you have to select the file and after that (without clicking at anything else) you can full view your object.
 <br>It should look like this:
-![Fullview Viewport](Images/Fullview.png)
+![Fullview Viewport](Images/FullView.png)
 
 ### Object Info
 - After you loaded the object you can take a look at information about the object, such as number of vertices, faces or a file size.
