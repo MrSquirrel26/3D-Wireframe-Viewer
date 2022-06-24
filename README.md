@@ -4,7 +4,7 @@
 - Overview
 - Menu guide
 - Wireframe viewport guide
-- Full View - Comming Soon - maybe
+- Full View - Comming Soon
 ## Overview
 ---
 If you are 3D artist or just using 3D objects, with this program you can see your object in full 3D Wireframe view and see all important information about it, such as (number of vertices, polygons and so on). With nice and simple UI it's really easy for everyone to use it.
